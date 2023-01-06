@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1280px] w-[calc(100%-3rem)] ml-[1.5rem] mr-[1.5rem] lg:m-auto;
+  }
+}
+
+@layer utilities {
+}

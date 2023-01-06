@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth overflow-hidden h-full;
+  }
+
+  body {
+    height: 100%;
+    background-color: #1e234d;
+  }
+}
