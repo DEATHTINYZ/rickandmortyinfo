@@ -60,7 +60,6 @@ const page = () => {
           <div className="grid gap-[1rem] sm:grid-cols-[.5fr_1.5fr]">
             <div>
               <Filter
-                pageNumber={pageNumber}
                 updateStatus={updateStatus}
                 updateGender={updateGender}
                 updateSpecies={updateSpecies}

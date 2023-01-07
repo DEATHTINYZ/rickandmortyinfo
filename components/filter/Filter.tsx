@@ -5,7 +5,6 @@ import Species from './category/Species'
 import Status from './category/Status'
 
 interface Props {
-  pageNumber: number
   updatePageNumber: (value: number) => void
   updateStatus: (value: string) => void
   updateGender: (value: string) => void
@@ -13,7 +12,6 @@ interface Props {
 }
 
 const Filter = ({
-  pageNumber,
   updatePageNumber,
   updateStatus,
   updateGender,
