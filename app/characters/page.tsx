@@ -7,6 +7,7 @@ import Pagination from 'components/pagination/Pagination'
 import Search from 'components/search/Search'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import logo from 'public/assets/logo.png'
 import React, { useEffect, useState } from 'react'
 
@@ -73,7 +74,7 @@ const page = () => {
                     <Loading />
                   </div>
                 ) : (
-                  <Card page="/" results={results} />
+                  <Card page="/characters/" results={results} />
                 )}
               </div>
               <Pagination

@@ -1,10 +1,8 @@
 'use client'
 import Card from 'components/card/Card'
-import Filter from 'components/filter/Filter'
 import Option from 'components/filter/Option'
 import Footer from 'components/footer/Footer'
 import Loading from 'components/loading/Loading'
-import Pagination from 'components/pagination/Pagination'
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from 'public/assets/logo.png'
@@ -29,10 +27,10 @@ const page = () => {
   useEffect(() => {
     ;(async function () {
       setLoading(true)
-      let data = await fetch(api).then(res => res.json())
+      const data = await fetch(api).then(res => res.json())
       setInfo(data)
       setLoading(false)
-      let a = await Promise.all(
+      const a = await Promise.all(
         data.characters.map(async (x: RequestInfo | URL) => {
           const res = await fetch(x)
           return await res.json()

@@ -10,7 +10,7 @@ interface Props {
 }
 
 const Pagination = ({ pageNumber, info, updatePageNumber }: Props) => {
-  let pageChange = (data: { selected: number }) => {
+  const pageChange = (data: { selected: number }) => {
     updatePageNumber(data.selected + 1)
   }
 
