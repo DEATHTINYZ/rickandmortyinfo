@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 'use client'
 import Card from 'components/card/Card'
 import Option from 'components/filter/Option'
@@ -10,7 +11,6 @@ import React, { useEffect, useState } from 'react'
 
 interface Info {
   dimension: string
-  type: string
   name: string
 }
 
@@ -19,10 +19,9 @@ const page = () => {
   const [loading, setLoading] = useState(true)
   const [info, setInfo] = useState<Info>({
     dimension: '',
-    type: '',
     name: ''
   })
-  const { dimension, type, name } = info
+  const { dimension, name } = info
   const [number, setNumber] = useState(1)
 
   const api = `https://rickandmortyapi.com/api/location/${number}`

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import Gender from './category/Gender'
 import Species from './category/Species'

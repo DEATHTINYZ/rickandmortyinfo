@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 'use client'
 import Card from 'components/card/Card'
 import Filter from 'components/filter/Filter'
@@ -7,7 +8,6 @@ import Pagination from 'components/pagination/Pagination'
 import Search from 'components/search/Search'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import logo from 'public/assets/logo.png'
 import React, { useEffect, useState } from 'react'
 
