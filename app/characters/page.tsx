@@ -6,6 +6,7 @@ import Loading from 'components/loading/Loading'
 import Pagination from 'components/pagination/Pagination'
 import Search from 'components/search/Search'
 import Image from 'next/image'
+import Link from 'next/link'
 import logo from 'public/assets/logo.png'
 import React, { useEffect, useState } from 'react'
 
@@ -37,14 +38,16 @@ const page = () => {
     <main className="h-full">
       <div className="container flex flex-col gap-[1rem]">
         <div className="h-[200px] relative">
-          <Image
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-            src={logo}
-            width={400}
-            height={400}
-            alt=""
-            priority
-          />
+          <Link href="/">
+            <Image
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              src={logo}
+              width={400}
+              height={400}
+              alt=""
+              priority
+            />
+          </Link>
         </div>
         <div className="flex flex-col gap-[1rem] pb-[2rem]">
           <div className="bg-[#F3F4F6] rounded-lg p-[1rem] flex flex-col justify-between items-center gap-[1rem] sm:flex-row">
