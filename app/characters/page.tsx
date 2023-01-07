@@ -4,12 +4,16 @@ import Card from 'components/card/Card'
 import Filter from 'components/filter/Filter'
 import Footer from 'components/footer/Footer'
 import Loading from 'components/loading/Loading'
-import Pagination from 'components/pagination/Pagination'
 import Search from 'components/search/Search'
+import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from 'public/assets/logo.png'
 import React, { useEffect, useState } from 'react'
+
+const Pagination = dynamic(() => import('components/pagination/Pagination'), {
+  ssr: false
+})
 
 const page = () => {
   const [pageNumber, updatePageNumber] = useState(1)
