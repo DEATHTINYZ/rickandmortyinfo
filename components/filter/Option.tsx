@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable no-unused-vars */
-import { OptionProps } from 'interface/types'
+import { OptionProps } from '@/types/types'
 import React from 'react'
 
 const Option = ({ name, changeID, total }: OptionProps) => {

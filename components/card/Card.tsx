@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { CardProps } from 'interface/types'
+import { CardProps } from '@/types/types'
 import Link from 'next/link'
 import React from 'react'
 

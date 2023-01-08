@@ -1,6 +1,6 @@
+import logo from '@/public/assets/logo.png'
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from 'public/assets/logo.png'
 
 export default function Home() {
   return (

@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { FilterBtnProps } from 'interface/types'
+import { FilterBtnProps } from '@/types/types'
 import React from 'react'
 
 const Filterbtn = ({

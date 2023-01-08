@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-import { FilterProps } from 'interface/types'
 import React from 'react'
+import { FilterProps } from 'types/types'
 import Gender from './category/Gender'
 import Species from './category/Species'
 import Status from './category/Status'

@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-import { species } from 'constants/constants'
-import { SpeciesProps } from 'interface/types'
+import { species } from '@/constants/constants'
+import { SpeciesProps } from '@/types/types'
 import React from 'react'
 import Filterbtn from '../Filterbtn'
 

@@ -1,13 +1,13 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 'use client'
-import Card from 'components/card/Card'
-import Option from 'components/filter/Option'
-import Footer from 'components/footer/Footer'
-import Loading from 'components/loading/Loading'
-import { LocationInfoProps } from 'interface/types'
+import Card from '@/components/card/Card'
+import Option from '@/components/filter/Option'
+import Footer from '@/components/footer/Footer'
+import Loading from '@/components/loading/Loading'
+import logo from '@/public/assets/logo.png'
+import { LocationInfoProps } from '@/types/types'
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from 'public/assets/logo.png'
 import React, { useEffect, useState } from 'react'
 
 const page = () => {

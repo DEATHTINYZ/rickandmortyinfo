@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-import { genders } from 'constants/constants'
-import { GenderProps } from 'interface/types'
+import { genders } from '@/constants/constants'
+import { GenderProps } from '@/types/types'
 import React from 'react'
 import Filterbtn from '../Filterbtn'
 

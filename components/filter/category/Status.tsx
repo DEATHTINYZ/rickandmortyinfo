@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { status } from 'constants/constants'
-import { StatusProps } from 'interface/types'
 import React from 'react'
+import { StatusProps } from 'types/types'
 import Filterbtn from '../Filterbtn'
 
 const Status = ({ updateStatus, updatePageNumber }: StatusProps) => {

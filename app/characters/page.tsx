@@ -1,17 +1,17 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 'use client'
-import Card from 'components/card/Card'
-import Filter from 'components/filter/Filter'
-import Footer from 'components/footer/Footer'
-import Loading from 'components/loading/Loading'
-import Search from 'components/search/Search'
+import Card from '@/components/card/Card'
+import Filter from '@/components/filter/Filter'
+import Footer from '@/components/footer/Footer'
+import Loading from '@/components/loading/Loading'
+import Search from '@/components/search/Search'
+import logo from '@/public/assets/logo.png'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from 'public/assets/logo.png'
 import React, { useEffect, useState } from 'react'
 
-const Pagination = dynamic(() => import('components/pagination/Pagination'), {
+const Pagination = dynamic(() => import('@/components/pagination/Pagination'), {
   ssr: false
 })
 

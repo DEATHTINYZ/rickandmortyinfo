@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { SearchProps } from 'interface/types'
+import { SearchProps } from '@/types/types'
 import React from 'react'
 
 const Search = ({ setSearch, updatePageNumber }: SearchProps) => {

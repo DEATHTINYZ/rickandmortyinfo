@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { CardDetailsProps } from 'interface/types'
+import { CardDetailsProps } from '@/types/types'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 

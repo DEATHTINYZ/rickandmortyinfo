@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { PaginationProps } from 'interface/types'
+import { PaginationProps } from '@/types/types'
 import React, { useEffect, useState } from 'react'
 import ReactPaginate from 'react-paginate'
 
