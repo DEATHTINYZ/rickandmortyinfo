@@ -23,6 +23,22 @@ export interface CardProps {
   }[]
 }
 
+// card details
+export type CardDetailsProps = {
+  name: string
+  location: {
+    name: string
+  }
+  origin: {
+    name: string
+  }
+  gender: string
+  image: string
+  status: string
+  species: string
+  episode: string[]
+}
+
 // seacrh
 export interface SearchProps {
   setSearch: (value: string) => void
