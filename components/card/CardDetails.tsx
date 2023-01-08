@@ -1,27 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
+import { CardDetailsProps } from 'interface/types'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
-
-type Data = {
-  name: string
-  location: {
-    name: string
-  }
-  origin: {
-    name: string
-  }
-  gender: string
-  image: string
-  status: string
-  species: string
-  episode: string[]
-}
 
 const CardDetails = () => {
   const router = useRouter()
   const { id } = router.query
 
-  const [fetchedData, updateFetchedData] = useState<Data>({} as Data)
+  const [fetchedData, updateFetchedData] = useState<CardDetailsProps>(
+    {} as CardDetailsProps
+  )
   const { name, location, origin, gender, image, status, species, episode } =
     fetchedData
 
