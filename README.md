@@ -31,6 +31,28 @@
   <img src='https://wakatime.com/badge/user/59564192-3b33-4d25-b612-a7ef7bd0c4d7/project/00a8cb96-adfb-4f1d-a0c5-e0c1e57ee755.svg' />
 </p>
 
+## Table of Contents
+
+- [Screenshots](#screenshots)
+- [Getting started](#getting-started)
+- [Features](#features)
+- [Tech stack](#tech-stack)
+- [Author](#author)
+
+## Screenshots
+
+### Home Page
+
+![Example screenshot](/public/assets/example-1.png)
+
+### Characters Page
+
+![Example screenshot](/public/assets/example-2.png)
+
+### 404 Page
+
+![Example screenshot](/public/assets/example-3.png)
+
 ## Getting started
 
 To run this project locally, you will need to have [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) (or [Yarn](https://yarnpkg.com/)) installed on your machine.
@@ -76,4 +98,9 @@ The app will be available at http://localhost:3000.
 - [Next.js](https://nextjs.org/): A framework for building server-rendered React apps
 - [TypeScript](https://www.typescriptlang.org/): A typed superset of JavaScript
 - [React](https://reactjs.org/): A JavaScript library for building user interfaces
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework
 - [Rick and Morty API](https://rickandmortyapi.com/): A free JSON REST API for data from the Rick and Morty show
+
+## Author
+
+[Chayutpong Jamneanpongphan (DEATHTINYZ)](https://www.instagram.com/ur.ddream/)
