@@ -1,19 +1,18 @@
 /* eslint-disable no-unused-vars */
-
 // locations
-export interface LocationInfoProps {
+export type LocationInfoProps = {
   dimension: string
   name: string
 }
 
 // episodes
-export interface EpisodeInfoProps {
+export type EpisodeInfoProps = {
   air_date: string
   name: string
 }
 
 // card
-export interface CardProps {
+export type CardProps = {
   page: string
   results: {
     id: string
@@ -40,13 +39,13 @@ export type CardDetailsProps = {
 }
 
 // seacrh
-export interface SearchProps {
+export type SearchProps = {
   setSearch: (value: string) => void
   updatePageNumber: (value: number) => void
 }
 
 // pagination
-export interface PaginationProps {
+export type PaginationProps = {
   pageNumber: number
   info: {
     pages: number
@@ -55,7 +54,7 @@ export interface PaginationProps {
 }
 
 // filter
-export interface FilterProps {
+export type FilterProps = {
   updatePageNumber: (value: number) => void
   updateStatus: (value: string) => void
   updateGender: (value: string) => void
@@ -63,7 +62,7 @@ export interface FilterProps {
 }
 
 // filterbtn
-export interface FilterBtnProps {
+export type FilterBtnProps = {
   input: string
   task: (value: string) => void
   updatePageNumber: (value: number) => void
@@ -72,26 +71,26 @@ export interface FilterBtnProps {
 }
 
 // option
-export interface OptionProps {
+export type OptionProps = {
   name: string
   changeID: (value: number) => void
   total: number
 }
 
 // status
-export interface StatusProps {
+export type StatusProps = {
   updateStatus: (value: string) => void
   updatePageNumber: (value: number) => void
 }
 
 // species
-export interface SpeciesProps {
+export type SpeciesProps = {
   updateSpecies: (value: string) => void
   updatePageNumber: (value: number) => void
 }
 
 // gender
-export interface GenderProps {
+export type GenderProps = {
   updateGender: (value: string) => void
   updatePageNumber: (value: number) => void
 }
