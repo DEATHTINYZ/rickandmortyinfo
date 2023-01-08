@@ -1,16 +1,13 @@
 /* eslint-disable no-unused-vars */
+import { PaginationProps } from 'interface/types'
 import React, { useEffect, useState } from 'react'
 import ReactPaginate from 'react-paginate'
 
-interface Props {
-  pageNumber: number
-  info: {
-    pages: number
-  }
-  updatePageNumber: (value: number) => void
-}
-
-const Pagination = ({ pageNumber, info, updatePageNumber }: Props) => {
+const Pagination = ({
+  pageNumber,
+  info,
+  updatePageNumber
+}: PaginationProps) => {
   const pageChange = (data: { selected: number }) => {
     updatePageNumber(data.selected + 1)
   }

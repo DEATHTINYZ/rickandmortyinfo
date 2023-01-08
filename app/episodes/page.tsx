@@ -4,20 +4,16 @@ import Card from 'components/card/Card'
 import Option from 'components/filter/Option'
 import Footer from 'components/footer/Footer'
 import Loading from 'components/loading/Loading'
+import { EpisodeInfoProps } from 'interface/types'
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from 'public/assets/logo.png'
 import React, { useEffect, useState } from 'react'
 
-interface EpisodeInfo {
-  air_date: string
-  name: string
-}
-
 const page = () => {
   const [results, setResults] = useState([] as any[])
   const [loading, setLoading] = useState(true)
-  const [info, setInfo] = useState<EpisodeInfo>({
+  const [info, setInfo] = useState<EpisodeInfoProps>({
     air_date: '',
     name: ''
   })

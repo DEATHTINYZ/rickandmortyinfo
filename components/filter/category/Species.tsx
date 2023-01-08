@@ -1,26 +1,10 @@
 /* eslint-disable no-unused-vars */
+import { species } from 'constants/constants'
+import { SpeciesProps } from 'interface/types'
 import React from 'react'
 import Filterbtn from '../Filterbtn'
 
-interface Props {
-  updateSpecies: (value: string) => void
-  updatePageNumber: (value: number) => void
-}
-
-const Species = ({ updateSpecies, updatePageNumber }: Props) => {
-  const species = [
-    'Human',
-    'Alien',
-    'Humanoid',
-    'Poopybutthole',
-    'Mythological',
-    'Unknown',
-    'Animal',
-    'Disease',
-    'Robot',
-    'Cronenberg',
-    'Planet'
-  ]
+const Species = ({ updateSpecies, updatePageNumber }: SpeciesProps) => {
   return (
     <div className="bg-[#F3F4F6] rounded-lg p-[1rem] flex flex-col gap-[.5rem]">
       <div className="text-[20px]">Species</div>

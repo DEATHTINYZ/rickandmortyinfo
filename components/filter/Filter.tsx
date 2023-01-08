@@ -1,22 +1,16 @@
 /* eslint-disable no-unused-vars */
+import { FilterProps } from 'interface/types'
 import React from 'react'
 import Gender from './category/Gender'
 import Species from './category/Species'
 import Status from './category/Status'
-
-interface Props {
-  updatePageNumber: (value: number) => void
-  updateStatus: (value: string) => void
-  updateGender: (value: string) => void
-  updateSpecies: (value: string) => void
-}
 
 const Filter = ({
   updatePageNumber,
   updateStatus,
   updateGender,
   updateSpecies
-}: Props) => {
+}: FilterProps) => {
   let clear = () => {
     updateStatus('')
     updateGender('')

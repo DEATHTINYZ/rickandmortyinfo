@@ -1,12 +1,8 @@
 /* eslint-disable no-unused-vars */
+import { SearchProps } from 'interface/types'
 import React from 'react'
 
-interface Props {
-  setSearch: (value: string) => void
-  updatePageNumber: (value: number) => void
-}
-
-const Search = ({ setSearch, updatePageNumber }: Props) => {
+const Search = ({ setSearch, updatePageNumber }: SearchProps) => {
   const searchBtn = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault()
   }

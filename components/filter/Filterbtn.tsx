@@ -1,15 +1,14 @@
 /* eslint-disable no-unused-vars */
+import { FilterBtnProps } from 'interface/types'
 import React from 'react'
 
-interface Props {
-  input: string
-  task: (value: string) => void
-  updatePageNumber: (value: number) => void
-  index: number
-  name: string
-}
-
-const Filterbtn = ({ input, task, updatePageNumber, index, name }: Props) => {
+const Filterbtn = ({
+  input,
+  task,
+  updatePageNumber,
+  index,
+  name
+}: FilterBtnProps) => {
   return (
     <div>
       <style jsx>

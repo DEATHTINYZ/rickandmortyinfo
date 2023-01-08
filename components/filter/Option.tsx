@@ -1,14 +1,9 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable no-unused-vars */
+import { OptionProps } from 'interface/types'
 import React from 'react'
 
-interface Props {
-  name: string
-  changeID: (value: number) => void
-  total: number
-}
-
-const Option = ({ name, changeID, total }: Props) => {
+const Option = ({ name, changeID, total }: OptionProps) => {
   return (
     <select
       onChange={e => changeID(parseInt(e.target.value))}

@@ -1,18 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
+import { CardProps } from 'interface/types'
 import Link from 'next/link'
 import React from 'react'
 
-interface Props {
-  page: string
-  results: {
-    id: string
-    image: string
-    name: string
-    status: string
-  }[]
-}
-
-const Card = ({ page, results }: Props) => {
+const Card = ({ page, results }: CardProps) => {
   let display: string | JSX.Element[]
 
   if (results) {
