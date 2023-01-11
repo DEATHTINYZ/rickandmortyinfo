@@ -71,13 +71,13 @@ const page = () => {
               />
             </div>
             <div className="flex flex-col gap-[1rem]">
-              <div className="bg-[#F3F4F6] rounded-lg p-[1rem] flex flex-wrap items-center justify-center gap-[2rem]">
+              <div className="bg-[#F3F4F6] rounded-lg p-[1rem] grid gap-[2rem]">
                 {loading ? (
                   <div className="m-auto">
                     <Loading />
                   </div>
                 ) : (
-                  <Card page="/characters/" results={results} />
+                  <Card results={results} />
                 )}
               </div>
               <Pagination

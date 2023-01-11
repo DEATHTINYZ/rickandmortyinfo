@@ -76,7 +76,7 @@ const page = () => {
                     <Loading />
                   </div>
                 ) : (
-                  <Card page="/episodes/" results={results} />
+                  <Card results={results} />
                 )}
               </div>
             </div>

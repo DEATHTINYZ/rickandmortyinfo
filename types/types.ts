@@ -13,29 +13,20 @@ export type EpisodeInfoProps = {
 
 // card
 export type CardProps = {
-  page: string
   results: {
     id: string
-    image: string
     name: string
     status: string
+    species: string
+    gender: string
+    origin: {
+      name: string
+    }
+    location: {
+      name: string
+    }
+    image: string
   }[]
-}
-
-// card details
-export type CardDetailsProps = {
-  name: string
-  location: {
-    name: string
-  }
-  origin: {
-    name: string
-  }
-  gender: string
-  image: string
-  status: string
-  species: string
-  episode: string[]
 }
 
 // seacrh

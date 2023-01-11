@@ -1,27 +1,44 @@
 /* eslint-disable @next/next/no-img-element */
 import { CardProps } from '@/types/types'
-import Link from 'next/link'
 import React from 'react'
 
-const Card = ({ page, results }: CardProps) => {
+const Card = ({ results }: CardProps) => {
   let display: string | JSX.Element[]
 
   if (results) {
     display = results.map(x => {
-      const { id, image, name, status } = x
+      const { id, name, status, species, gender, origin, location, image } = x
 
       return (
-        <Link href={`${page}${id}`} key={id} className="relative">
-          <div className="flex flex-col gap-[.6rem]">
-            <div className="overflow-hidden rounded-lg">
+        <div key={id} className="relative">
+          <div className="flex gap-[.6rem] bg-white rounded-lg overflow-hidden">
+            <div className="absolute right-[10px] top-1/2 transform -translate-y-1/2 text-[120px] opacity-[.2]">
+              #{id}
+            </div>
+            <div className="overflow-hidden">
               <img
-                className="rounded-lg w-full h-[200px] object-cover hover:scale-[1.25] transition-[.6s] duration-[.6s] brightness-[.9]"
+                className="w-full h-[220px] object-cover hover:scale-[1.25] transition-[.6s] duration-[.6s] brightness-[.9]"
                 src={image}
                 alt=""
               />
             </div>
-            <div className="">
-              <div className="text-center">{name}</div>
+            <div className="p-[.5rem] flex flex-col gap-[.5rem]">
+              <div>
+                <div className="text-[28px] font-bold">{name}</div>
+                <div className="flex gap-[.2rem]">
+                  <div className="">{gender}</div>
+                  <div> - </div>
+                  <div className="">{species}</div>
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <div className="text-[#9E9E9E]">Last know location:</div>
+                <div className="text-[20px]">{location?.name}</div>
+              </div>
+              <div className="flex flex-col">
+                <div className="text-[#9E9E9E]">Origin:</div>
+                <div className="text-[20px]">{origin?.name}</div>
+              </div>
             </div>
           </div>
 
@@ -58,7 +75,7 @@ const Card = ({ page, results }: CardProps) => {
               )
             }
           })()}
-        </Link>
+        </div>
       )
     })
   } else {
