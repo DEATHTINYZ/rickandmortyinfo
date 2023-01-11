@@ -11,8 +11,8 @@ const Card = ({ results }: CardProps) => {
 
       return (
         <div key={id} className="relative">
-          <div className="flex gap-[.6rem] bg-white rounded-lg overflow-hidden">
-            <div className="absolute right-[10px] top-1/2 transform -translate-y-1/2 text-[120px] opacity-[.2]">
+          <div className="flex flex-col gap-[.6rem] bg-white rounded-lg overflow-hidden md:flex-row">
+            <div className="hidden absolute right-[10px] top-1/2 transform -translate-y-1/2 text-[120px] opacity-[.2] md:block">
               #{id}
             </div>
             <div className="overflow-hidden">
@@ -24,7 +24,9 @@ const Card = ({ results }: CardProps) => {
             </div>
             <div className="p-[.5rem] flex flex-col gap-[.5rem]">
               <div>
-                <div className="text-[28px] font-bold">{name}</div>
+                <div className="text-[16px] md:text-[20px] lg:text-[28px] font-bold">
+                  {name}
+                </div>
                 <div className="flex gap-[.2rem]">
                   <div className="">{gender}</div>
                   <div> - </div>
@@ -33,11 +35,13 @@ const Card = ({ results }: CardProps) => {
               </div>
               <div className="flex flex-col">
                 <div className="text-[#9E9E9E]">Last know location:</div>
-                <div className="text-[20px]">{location?.name}</div>
+                <div className="text-[16px] lg:text-[20px]">
+                  {location?.name}
+                </div>
               </div>
               <div className="flex flex-col">
                 <div className="text-[#9E9E9E]">Origin:</div>
-                <div className="text-[20px]">{origin?.name}</div>
+                <div className="text-[16px] lg:text-[20px]">{origin?.name}</div>
               </div>
             </div>
           </div>
