@@ -12,7 +12,7 @@
 > This project is a Next.js web app that displays details of characters from the Rick and Morty show. It fetches data from the [Rick and Morty API](https://rickandmortyapi.com/) and displays it in a user-friendly way.
 
 <p align="center">
-  <a href="https://github.com/DEATHTINYZ/ping-pong/fork" target="_blank">
+  <a href="https://github.com/DEATHTINYZ/rickandmortyinfo" target="_blank">
     <img src="https://img.shields.io/github/forks/DEATHTINYZ/rickandmortyinfo?" alt="Badge showing the total of project forks"/>
   </a>
 
