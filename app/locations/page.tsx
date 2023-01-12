@@ -23,20 +23,22 @@ const page = () => {
   const api = `https://rickandmortyapi.com/api/location/${number}`
 
   useEffect(() => {
-    ;(async function () {
+    async function fetchData() {
       setLoading(true)
       const data = await fetch(api).then(res => res.json())
       setInfo(data)
       setLoading(false)
-      const a = await Promise.all(
+      const residentData = await Promise.all(
         data.residents.map(async (x: RequestInfo | URL) => {
           const res = await fetch(x)
           return await res.json()
         })
       )
-      setResults(a)
-    })()
+      setResults(residentData)
+    }
+    fetchData()
   }, [api])
+
   return (
     <main className="h-full">
       <div className="container flex flex-col gap-[1rem]">
@@ -71,7 +73,7 @@ const page = () => {
               <Option name="Location" changeID={setNumber} total={126} />
             </div>
             <div className="flex flex-col gap-[1rem]">
-              <div className="bg-[#F3F4F6] rounded-lg p-[1rem] flex flex-wrap items-center justify-center gap-[2rem]">
+              <div className="bg-[#F3F4F6] rounded-lg p-[1rem] grid gap-[2rem]">
                 {loading ? (
                   <div className="m-auto">
                     <Loading />

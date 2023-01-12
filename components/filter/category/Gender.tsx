@@ -4,7 +4,7 @@ import { GenderProps } from '@/types/types'
 import React from 'react'
 import Filterbtn from '../Filterbtn'
 
-const Gender = ({ updateGender, updatePageNumber }: GenderProps) => {
+const Gender = ({ setGender, setPageNumber }: GenderProps) => {
   return (
     <div className="bg-[#F3F4F6] rounded-lg p-[1rem] flex flex-col gap-[.5rem]">
       <div className="text-[20px]">Gender</div>
@@ -15,8 +15,8 @@ const Gender = ({ updateGender, updatePageNumber }: GenderProps) => {
               name="gender"
               index={index}
               key={index}
-              updatePageNumber={updatePageNumber}
-              task={updateGender}
+              setPageNumber={setPageNumber}
+              task={setGender}
               input={items}
             />
           )

@@ -2,7 +2,7 @@
 import { SearchProps } from '@/types/types'
 import React from 'react'
 
-const Search = ({ setSearch, updatePageNumber }: SearchProps) => {
+const Search = ({ setSearch, setPageNumber }: SearchProps) => {
   const searchBtn = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault()
   }
@@ -11,7 +11,7 @@ const Search = ({ setSearch, updatePageNumber }: SearchProps) => {
       <div className="relative text-gray-600">
         <input
           onChange={e => {
-            updatePageNumber(1)
+            setPageNumber(1)
             setSearch(e.target.value)
           }}
           placeholder="Search Something. . ."

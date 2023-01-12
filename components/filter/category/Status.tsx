@@ -4,7 +4,7 @@ import React from 'react'
 import { StatusProps } from 'types/types'
 import Filterbtn from '../Filterbtn'
 
-const Status = ({ updateStatus, updatePageNumber }: StatusProps) => {
+const Status = ({ setStatus, setPageNumber }: StatusProps) => {
   return (
     <div className="bg-[#F3F4F6] rounded-lg p-[1rem] flex flex-col gap-[.5rem]">
       <div className="text-[20px]">Status</div>
@@ -14,8 +14,8 @@ const Status = ({ updateStatus, updatePageNumber }: StatusProps) => {
             key={index}
             index={index}
             name="status"
-            task={updateStatus}
-            updatePageNumber={updatePageNumber}
+            task={setStatus}
+            setPageNumber={setPageNumber}
             input={item}
           />
         ))}

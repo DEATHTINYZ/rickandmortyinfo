@@ -3,13 +3,9 @@ import { PaginationProps } from '@/types/types'
 import React, { useEffect, useState } from 'react'
 import ReactPaginate from 'react-paginate'
 
-const Pagination = ({
-  pageNumber,
-  info,
-  updatePageNumber
-}: PaginationProps) => {
+const Pagination = ({ pageNumber, info, setPageNumber }: PaginationProps) => {
   const pageChange = (data: { selected: number }) => {
-    updatePageNumber(data.selected + 1)
+    setPageNumber(data.selected + 1)
   }
 
   const [width, setWidth] = useState(window.innerWidth)

@@ -5,7 +5,7 @@ import React from 'react'
 const Filterbtn = ({
   input,
   task,
-  updatePageNumber,
+  setPageNumber,
   index,
   name
 }: FilterBtnProps) => {
@@ -32,7 +32,7 @@ const Filterbtn = ({
         <label
           onClick={x => {
             task(input)
-            updatePageNumber(1)
+            setPageNumber(1)
           }}
           className="border-2 border-gray-300 bg-white w-full text-center p-[.5rem] rounded-lg cursor-pointer"
           htmlFor={`${name}-${index}`}

@@ -16,12 +16,12 @@ const Pagination = dynamic(() => import('@/components/pagination/Pagination'), {
 })
 
 const page = () => {
-  const [pageNumber, updatePageNumber] = useState(1)
-  const [status, updateStatus] = useState('')
-  const [gender, updateGender] = useState('')
-  const [species, updateSpecies] = useState('')
+  const [pageNumber, setPageNumber] = useState(1)
+  const [status, setStatus] = useState('')
+  const [gender, setGender] = useState('')
+  const [species, setSpecies] = useState('')
   const [loading, setLoading] = useState(true)
-  const [fetchedData, updateFetchedData] = useState({
+  const [fetchedData, setFetchedData] = useState({
     info: { pages: 0, count: '' },
     results: []
   })
@@ -31,12 +31,13 @@ const page = () => {
   const api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}&status=${status}&gender=${gender}&species=${species}`
 
   useEffect(() => {
-    ;(async function () {
-      setLoading(true)
-      const data = await fetch(api).then(res => res.json())
-      updateFetchedData(data)
-      setLoading(false)
-    })()
+    setLoading(true)
+    fetch(api)
+      .then(res => res.json())
+      .then(data => {
+        setFetchedData(data)
+        setLoading(false)
+      })
   }, [api])
 
   return (
@@ -56,7 +57,7 @@ const page = () => {
         </div>
         <div className="flex flex-col gap-[1rem] pb-[2rem]">
           <div className="bg-[#F3F4F6] rounded-lg p-[1rem] flex flex-col justify-between items-center gap-[1rem] sm:flex-row">
-            <Search setSearch={setSearch} updatePageNumber={updatePageNumber} />
+            <Search setSearch={setSearch} setPageNumber={setPageNumber} />
             <div className="flex gap-[1rem]">
               {info && info.count ? <>{info.count}</> : '0'} Characters
             </div>
@@ -64,10 +65,10 @@ const page = () => {
           <div className="grid gap-[1rem] sm:grid-cols-[.5fr_1.5fr]">
             <div>
               <Filter
-                updateStatus={updateStatus}
-                updateGender={updateGender}
-                updateSpecies={updateSpecies}
-                updatePageNumber={updatePageNumber}
+                setStatus={setStatus}
+                setGender={setGender}
+                setSpecies={setSpecies}
+                setPageNumber={setPageNumber}
               />
             </div>
             <div className="flex flex-col gap-[1rem]">
@@ -83,7 +84,7 @@ const page = () => {
               <Pagination
                 info={info}
                 pageNumber={pageNumber}
-                updatePageNumber={updatePageNumber}
+                setPageNumber={setPageNumber}
               />
             </div>
           </div>

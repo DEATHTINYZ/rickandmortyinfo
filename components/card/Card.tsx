@@ -28,9 +28,9 @@ const Card = ({ results }: CardProps) => {
                   {name}
                 </div>
                 <div className="flex gap-[.2rem]">
-                  <div className="">{gender}</div>
+                  <div>{gender}</div>
                   <div> - </div>
-                  <div className="">{species}</div>
+                  <div>{species}</div>
                 </div>
               </div>
               <div className="flex flex-col">

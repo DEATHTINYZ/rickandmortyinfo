@@ -32,7 +32,7 @@ export type CardProps = {
 // seacrh
 export type SearchProps = {
   setSearch: (value: string) => void
-  updatePageNumber: (value: number) => void
+  setPageNumber: (value: number) => void
 }
 
 // pagination
@@ -41,22 +41,22 @@ export type PaginationProps = {
   info: {
     pages: number
   }
-  updatePageNumber: (value: number) => void
+  setPageNumber: (value: number) => void
 }
 
 // filter
 export type FilterProps = {
-  updatePageNumber: (value: number) => void
-  updateStatus: (value: string) => void
-  updateGender: (value: string) => void
-  updateSpecies: (value: string) => void
+  setPageNumber: (value: number) => void
+  setStatus: (value: string) => void
+  setGender: (value: string) => void
+  setSpecies: (value: string) => void
 }
 
 // filterbtn
 export type FilterBtnProps = {
   input: string
   task: (value: string) => void
-  updatePageNumber: (value: number) => void
+  setPageNumber: (value: number) => void
   index: number
   name: string
 }
@@ -70,18 +70,18 @@ export type OptionProps = {
 
 // status
 export type StatusProps = {
-  updateStatus: (value: string) => void
-  updatePageNumber: (value: number) => void
+  setStatus: (value: string) => void
+  setPageNumber: (value: number) => void
 }
 
 // species
 export type SpeciesProps = {
-  updateSpecies: (value: string) => void
-  updatePageNumber: (value: number) => void
+  setSpecies: (value: string) => void
+  setPageNumber: (value: number) => void
 }
 
 // gender
 export type GenderProps = {
-  updateGender: (value: string) => void
-  updatePageNumber: (value: number) => void
+  setGender: (value: string) => void
+  setPageNumber: (value: number) => void
 }

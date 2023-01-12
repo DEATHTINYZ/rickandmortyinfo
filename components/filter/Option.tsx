@@ -15,7 +15,7 @@ const Option = ({ name, changeID, total }: OptionProps) => {
       </option>
       {[...Array(total).keys()].map((x, index) => {
         return (
-          <option value={x + 1}>
+          <option value={x + 1} key={index}>
             {name} - {x + 1}
           </option>
         )

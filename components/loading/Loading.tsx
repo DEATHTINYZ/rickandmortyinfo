@@ -4,7 +4,7 @@ import React from 'react'
 
 const Loading = () => {
   return (
-    <div className="">
+    <div>
       <Image src={loader} alt="Loader.." />
     </div>
   )

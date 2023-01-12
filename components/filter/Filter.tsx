@@ -6,16 +6,16 @@ import Species from './category/Species'
 import Status from './category/Status'
 
 const Filter = ({
-  updatePageNumber,
-  updateStatus,
-  updateGender,
-  updateSpecies
+  setPageNumber,
+  setStatus,
+  setGender,
+  setSpecies
 }: FilterProps) => {
   let clear = () => {
-    updateStatus('')
-    updateGender('')
-    updateSpecies('')
-    updatePageNumber(1)
+    setStatus('')
+    setGender('')
+    setSpecies('')
+    setPageNumber(1)
     window.location.reload()
   }
   return (
@@ -26,12 +26,9 @@ const Filter = ({
           Clear Filters
         </div>
       </div>
-      <Status updatePageNumber={updatePageNumber} updateStatus={updateStatus} />
-      <Species
-        updatePageNumber={updatePageNumber}
-        updateSpecies={updateSpecies}
-      />
-      <Gender updatePageNumber={updatePageNumber} updateGender={updateGender} />
+      <Status setPageNumber={setPageNumber} setStatus={setStatus} />
+      <Species setPageNumber={setPageNumber} setSpecies={setSpecies} />
+      <Gender setPageNumber={setPageNumber} setGender={setGender} />
     </div>
   )
 }

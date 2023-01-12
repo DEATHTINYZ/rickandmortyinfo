@@ -4,7 +4,7 @@ import { SpeciesProps } from '@/types/types'
 import React from 'react'
 import Filterbtn from '../Filterbtn'
 
-const Species = ({ updateSpecies, updatePageNumber }: SpeciesProps) => {
+const Species = ({ setSpecies, setPageNumber }: SpeciesProps) => {
   return (
     <div className="bg-[#F3F4F6] rounded-lg p-[1rem] flex flex-col gap-[.5rem]">
       <div className="text-[20px]">Species</div>
@@ -15,8 +15,8 @@ const Species = ({ updateSpecies, updatePageNumber }: SpeciesProps) => {
               name="species"
               index={index}
               key={index}
-              updatePageNumber={updatePageNumber}
-              task={updateSpecies}
+              setPageNumber={setPageNumber}
+              task={setSpecies}
               input={item}
             />
           )
