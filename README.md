@@ -16,8 +16,8 @@
     <img src="https://img.shields.io/github/forks/DEATHTINYZ/rickandmortyinfo?" alt="Badge showing the total of project forks"/>
   </a>
 
-  <a href="https://github.com/DEATHTINYZ/cs434_finalexam_mizuhara/stargazers" target="_blank">
-    <img src="https://img.shields.io/github/stars/DEATHTINYZ/cs434_finalexam_mizuhara?" alt="Badge showing the total of project stars"/>
+  <a href="https://github.com/DEATHTINYZ/rickandmortyinfo/stargazers" target="_blank">
+    <img src="https://img.shields.io/github/stars/DEATHTINYZ/rickandmortyinfo?" alt="Badge showing the total of project stars"/>
   </a>
 
   <a href="https://github.com/DEATHTINYZ/rickandmortyinfo/commits/main" target="_blank">
