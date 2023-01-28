@@ -60,13 +60,13 @@ To run this project locally, you will need to have [Node.js](https://nodejs.org/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/DEATHTINYZ/rick-and-morty-characters.git
+git clone https://github.com/DEATHTINYZ/rickandmortyinfo.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd rick-and-morty-characters
+cd rickandmortyinfo
 ```
 
 3. Install the dependencies:
